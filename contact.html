@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      width: 160px;
+      padding: 12px 0;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-box {
+      display: none;
+      border: 2px solid gray;
+      border-radius: 25px;
+      padding: 20px 30px;
+      max-width: 500px;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+    }
+
+    .contact-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .contact-item i {
+      font-size: 24px;
+      padding: 8px;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+    }
+
+    .contact-item.phone i {
+      background-color: transparent;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-row">
+    <a href="your_resume_link.pdf" class="btn" target="_blank">Resume</a>
+    <button class="btn" onclick="toggleContact()">Contact</button>
+  </div>
+
+  <div id="contactBox" class="contact-box">
+    <div class="contact-items">
+      <a href="mailto:binduswarupa@gmail.com" class="contact-item">
+        <i class="fas fa-envelope"></i> Mail
+      </a>
+      <a href="tel:+91XXXXXXXXXX" class="contact-item phone">
+        <i class="fas fa-phone"></i> Phone
+      </a>
+      <a href="https://www.linkedin.com/in/binduswarupavemulapalli/" target="_blank" class="contact-item">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function toggleContact() {
+      const box = document.getElementById('contactBox');
+      box.style.display = (box.style.display === 'none' || box.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
