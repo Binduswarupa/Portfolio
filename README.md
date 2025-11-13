@@ -86,19 +86,6 @@ Contact Form
 
 🛠️ Setup & Usage
 
-To run the portfolio locally:
-
-git clone https://github.com/your-username/your-portfolio-repo.git
-cd your-portfolio-repo
-open index.html
-
-
-If using VS Code:
-
-Install Live Server extension
-
-Right-click → Open with Live Server
-
 🚀 Deployment
 
 You can deploy this portfolio using:
